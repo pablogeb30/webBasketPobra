@@ -1,11 +1,11 @@
 # COMPLETAR LOS SIGUIENTES ARCHIVOS
 
-* [ ] calendario.html [PG]
-* [ ] contacto.html [PG]
-* [ ] elclub.html [PG]
-* [ ] equipos.html [PG]
-* [ ] mas.html [PG]
-* [ ] multimedia.html [JL]
+* [x] calendario.html [PG]
+* [x] contacto.html [PG]
+* [x] elclub.html [PG]
+* [x] multimedia.html [PG]
+* [ ] equipos.html [JL]
+* [ ] mas.html [JL]
 * [ ] noticias.html [JL]
 * [ ] patrocinadores.html [JL]
 * [ ] resultados.html [JL]
