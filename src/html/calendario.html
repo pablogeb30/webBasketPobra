@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es" data-bs-theme="auto">
+
+  <!-- Cabecera de la pagina -->
+  <head>
+
+    <!-- Enlace a la hoja de estilos general -->
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+
+    <!-- Metadatos de la pagina -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="José Luis Estrada García y Pablo Guerrica-Echevarría Basterrechea"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- Titulo de la pagina -->
+    <title>Calendario</title>
+
+  </head>
+
+  <!-- Cuerpo de la pagina -->
+  <body>
+
+    <!-- Nombre del equipo y menu de navegacion en la cabecera -->
+    <header>
+      <!-- Titulo/logo -->
+      <div class="titulo-container">
+        <a class="titulopeque" href="index.html">Basket</a>
+        <br>
+        <a class="titulogrande" href="index.html">Pobra</a>
+      </div>
+          <nav class="fill">
+            <ul>
+              <li><a href="calendario.html">Calendario</a></li>
+              <li><a href="equipos.html">Equipos</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+              <li><a href="multimedia.html">Multimedia</a></li>
+              <li><a href="elclub.html">El club</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+    </header>
+
+    <!-- Seccion de calendario -->
+    <section>
+
+      <!-- Titulo y descripcion de la seccion -->
+      <h2>Calendario</h2>
+      <p>
+        Aquí podrás encontrar información sobre los próximos eventos y partidos del
+        equipo Basket Pobra.
+      </p>
+
+      <!-- Buscador por fecha -->
+      <h3>Buscador por fecha</h3>
+      <label for="fecha">Seleccione una fecha:</label>
+      <input type="date" id="fecha" name="fecha" />
+      <button type="button" onclick="alert('Partidos de esa fecha')">Aceptar</button>
+
+      <!-- Partidos del equipo Senior -->
+      <h3>Equipo Senior Masculino</h3>
+          <b>Basket Pobra - PBB Porriño</b>
+          <br />
+          sábado, 24 de febrero de 2024, de 18:00 a 20:00
+          <br />
+          Polideportivo Municipal de A Pobra do Caramiñal
+          <div>
+            <img
+              src="/resources/images/matches/game1.jpg"
+              alt="Foto de otro partido contra ese equipo"
+              width="25%"
+            />
+          </div>
+          <br />
+          <b>Fontiñas - Basket Pobra</b>
+          <br />
+          sábado, 9 de marzo de 2024, de 18:00 a 20:00
+          <br />
+          Polideportivo Fontiñas
+          <div>
+            <img
+              src="/resources/images/matches/game2.jpg"
+              alt="Foto de otro partido contra ese equipo"
+              width="25%"
+            />
+          </div>
+      </br>
+      
+    </section>
+
+    <!-- Pie de pagina con informacion de contacto -->
+    <footer class="footer">
+      <div class="container">
+       <div class="row">
+         <div class="footer-col">
+           <h4>Conócenos</h4>
+           <ul>
+             <li><a href="#">Sobre nosotros</a></li>
+             <li><a href="#">Política de privacidad</a></li>
+             <li><a href="#">Términos y condiciones</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Ayuda</h4>
+           <ul>
+             <li><a href="#">Preguntas frequentes</a></li>
+              <li><a href="#">Contacto</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+          <h4>RRSS</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+             <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+         </div>
+       </div>
+      </div>
+   </footer>
+
+  </body>
+
+</html>
