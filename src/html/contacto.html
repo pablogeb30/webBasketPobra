@@ -1,42 +1,173 @@
-<!-- Nombre del equipo y menu de navegacion en la cabecera -->
-<header>
-  <h1><a href="index.html">Basket Pobra</a></h1>
-  <nav>
-    <ul>
-      <li><a href="calendario.html">Calendario</a></li>
-      <li><a href="equipos.html">Equipos</a></li>
-      <li><a href="resultados.html">Resultados</a></li>
-      <li><a href="elclub.html">El club</a></li>
-      <li><a href="noticias.html">Noticias</a></li>
-      <li><a href="patrocinadores.html">Patrocinadores</a></li>
-      <li><a href="multimedia.html">Multimedia</a></li>
-      <li><a href="tiendaonline.html">Tienda online</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="mas.html">Más</a></li>
-    </ul>
-  </nav>
-</header>
-<!-- Seccion de contacto -->
-<section>
-  <h2>Contáctanos</h2>
-  <p>
-    Por favor, completa el siguiente formulario de contacto y nos pondremos en
-    contacto contigo lo antes posible. También puedes encontrarnos en nuestras
-    redes sociales. ¡Estamos aquí para ayudarte en lo que necesites!
-  </p>
-  <h3>Nombre completo</h3>
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre" name="nombre" />
-  <label for="apellidos">Apellidos:</label>
-  <input type="text" id="apellidos" name="apellidos" />
-  <h3>Correo electrónico</h3>
-  <label for="email">Correo electrónico:</label>
-  <input type="email" id="email" name="email" />
-  <h3>Mensaje</h3>
-  <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
-</section>
-<!-- Pie de pagina con informacion de contacto -->
-<footer>
-  <p>Contacto: basketpobra@asambal.com | 669 734 569</p>
-  <p>Redes sociales: Facebook | Instagram</p>
-</footer>
+<!DOCTYPE html>
+
+<html lang="es" data-bs-theme="auto">
+
+  <!-- Cabecera de la pagina -->
+  <head>
+
+    <!-- Enlace a la hoja de estilos general -->
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+
+    <!-- Metadatos de la pagina -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="José Luis Estrada García y Pablo Guerrica-Echevarría Basterrechea"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- Titulo de la pagina -->
+    <title>Calendario</title>
+
+  </head>
+
+  <!-- Cuerpo de la pagina -->
+  <body>
+
+    <!-- Nombre del equipo y menu de navegacion en la cabecera -->
+    <header>
+      <!-- Titulo/logo -->
+      <div class="titulo-container">
+        <a class="titulopeque" href="index.html">Basket</a>
+        <br>
+        <a class="titulogrande" href="index.html">Pobra</a>
+      </div>
+          <nav class="fill">
+            <ul>
+              <li><a href="calendario.html">Calendario</a></li>
+              <li><a href="equipos.html">Equipos</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
+              <li><a href="multimedia.html">Multimedia</a></li>
+              <li><a href="elclub.html">El club</a></li>
+              <li><a href="tienda.html">Tienda</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </section>
+    </header>
+
+      <!-- Seccion de contacto -->
+    <section>
+      <h2>Contáctanos</h2>
+      <p>
+        Por favor, completa el siguiente formulario de contacto y nos pondremos en
+        contacto contigo lo antes posible. También puedes encontrarnos en nuestras
+        redes sociales. ¡Estamos aquí para ayudarte en lo que necesites!
+      </p>
+      <h3>Nombre completo</h3>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" name="apellidos" />
+      <h3>Correo electrónico</h3>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" />
+      <h3>Mensaje</h3>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+    </section>
+
+    <!-- Pie de pagina con informacion de contacto -->
+    <footer class="footer">
+      <div class="container">
+       <div class="row">
+         <div class="footer-col">
+           <h4>Conócenos</h4>
+           <ul>
+             <li><a href="#">Sobre nosotros</a></li>
+             <li><a href="#">Política de privacidad</a></li>
+             <li><a href="#">Términos y condiciones</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Ayuda</h4>
+           <ul>
+             <li><a href="#">Preguntas frequentes</a></li>
+              <li><a href="#">Contacto</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+          <h4>RRSS</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+             <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+         </div>
+       </div>
+      </div>
+   </footer>
+
+
+   <!--
+  </body>
+
+</html>
+
+
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>US</span>
+          </div>
+          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="credits">
+      inspired by
+      <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+        <svg class="dribbble" viewBox="0 0 200 200">
+          <g stroke="#ffffff" fill="none">
+            <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
+            <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
+            <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
+            <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
+          </g>
+        </svg>
+        Gururaj
+      </a>
+    </div>
+  </div>
+</div>
+ -->
+ 
