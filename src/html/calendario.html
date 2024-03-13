@@ -6,17 +6,24 @@
 
 <head>
 
-  <!-- Enlace a la hoja de estilos general -->
-  <link rel="stylesheet" type="text/css" href="/src/css/styles.css" />
+    <!-- Enlace a la hoja de estilos general -->
+    <link rel="stylesheet" type="text/css" href="/src/css/styles.css" />
 
-  <!-- Metadatos de la pagina -->
-  <meta charset="UTF-8" />
-  <meta name="description" content="" />
-  <meta name="author" content="José Luis Estrada García y Pablo Guerrica-Echevarría Basterrechea" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- Enlace a la hoja de estilos del calendario -->
+    <link rel="stylesheet" type="text/css" href="/src/css/calendario.css" />
 
-  <!-- Titulo de la pagina -->
-  <title>Calendario</title>
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <!-- Metadatos de la pagina -->
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="Consulta nuestro página de calendario para estar al tanto de próximos eventos y resultados anteriores.">
+    <meta name="author" content="José Luis Estrada García, Pablo Guerrica-Echevarría Basterrechea" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Titulo de la pagina -->
+    <title>Calendario</title>
 
 </head>
 
@@ -24,150 +31,127 @@
 
 <body>
 
-  <!-- Nombre del equipo y menu de navegacion en la cabecera -->
-  <header>
-    <!-- Titulo/logo -->
-    <div class="titulo-container" id="logo">
-      <a class="titulopeque" href="index.html">Basket</a>
-      <br>
-      <a class="titulogrande" href="index.html">Pobra</a>
-    </div>
-    <nav class="fill">
-      <ul>
-        <li><a href="calendario.html">Calendario</a></li>
-        <li><a href="equipos.html">Equipos</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="multimedia.html">Multimedia</a></li>
-        <li><a href="elclub.html">El club</a></li>
-        <li><a href="tienda.html">Tienda</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    </section>
-  </header>
-
-  <!-- Seccion de calendario -->
-  <section>
-
-    <!-- Titulo y descripcion de la seccion -->
-    <h2>Calendario</h2>
-    <p>
-      Aquí podrás encontrar información sobre los próximos eventos y partidos del
-      equipo Basket Pobra.
-    </p>
-
-    <!-- Buscador por fecha -->
-    <h3>Buscador por fecha</h3>
-    <label for="fecha">Seleccione una fecha:</label>
-    <input type="date" id="fecha" name="fecha" />
-    <button type="button" onclick="alert('Partidos de esa fecha')">Aceptar</button>
-
-    <!-- Partidos del equipo Senior -->
-    <h3>Equipo Senior Masculino</h3>
-    <b>Basket Pobra - PBB Porriño</b>
-    <br />
-    sábado, 24 de febrero de 2024, de 18:00 a 20:00
-    <br />
-    Polideportivo Municipal de A Pobra do Caramiñal
-    <div>
-      <img src="/assets/images/matches/game1.jpg" alt="Foto de otro partido contra ese equipo" width="25%" />
-    </div>
-    <br />
-    <b>Fontiñas - Basket Pobra</b>
-    <br />
-    sábado, 9 de marzo de 2024, de 18:00 a 20:00
-    <br />
-    Polideportivo Fontiñas
-    <div>
-      <img src="/assets/images/matches/game2.jpg" alt="Foto de otro partido contra ese equipo" width="25%" />
-    </div>
-    </br>
-
-  </section>
-
-  <!-- Pie de pagina con informacion de contacto -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col">
-          <h4>Conócenos</h4>
-          <ul>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos y condiciones</a></li>
-          </ul>
+    <!-- Nombre del equipo y menu de navegacion en la cabecera -->
+    <header>
+        <!-- Titulo/logo -->
+        <div class="titulo-container" id="logo">
+            <a class="titulopeque" href="index.html">Basket</a>
+            <br>
+            <a class="titulogrande" href="index.html">Pobra</a>
         </div>
-        <div class="footer-col">
-          <h4>Ayuda</h4>
-          <ul>
-            <li><a href="#">Preguntas frequentes</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>RRSS</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </div>
-  </footer>
+        <nav class="fill">
+            <ul>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="elclub.html">El club</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </section>
+    </header>
 
-  <!-- Script para hacer que el logo se haga mas pequeño al hacer scroll -->
-  <script src="/src/js/headerscroll.js"></script>
+    <!-- Seccion de proximos eventos -->
+    <div class="blog-home2 py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3 class="my-3">Upcoming Events</h3>
+                    <h6 class="subtitle font-weight-normal">You can relay on our amazing features list and also our
+                        customer
+                        services will be great experience for you without doubt</h6>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 on-hover">
+                    <div class="card border-0 mb-4">
+                        <a href="#"><img class="card-img-top"
+                                src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img3.jpg"
+                                alt="wrappixel kit"></a>
+                        <div
+                            class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                            Oct<span class="d-block">23</span></div>
+                        <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">You should
+                                have eagle’s
+                                eye
+                                on new trends and techonogies</a></h5>
+                        <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+                        <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 on-hover">
+                    <div class="card border-0 mb-4">
+                        <a href="#"><img class="card-img-top"
+                                src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img2.jpg"
+                                alt="wrappixel kit"></a>
+                        <div
+                            class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                            Oct<span class="d-block">23</span></div>
+                        <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">New Seminar on
+                                Newest Food
+                                Recipe from World’s Best</a></h5>
+                        <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+                        <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4 on-hover">
+                    <div class="card border-0 mb-4">
+                        <a href="#"><img class="card-img-top"
+                                src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img1.jpg"
+                                alt="wrappixel kit"></a>
+                        <div
+                            class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">
+                            Oct<span class="d-block">23</span></div>
+                        <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Learn from
+                                small things to
+                                create something bigger.</a></h5>
+                        <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
+                        <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de pagina con informacion de contacto -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Conócenos</h4>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">Preguntas frequentes</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>RRSS</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Script para hacer que el logo se haga mas pequeño al hacer scroll -->
+    <script src="/src/js/headerscroll.js"></script>
+
+    <!-- Bootstrap script JS -->
+    <script src="/lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 
 </body>
 
 </html>
-
-<!--
-<div class="blog-home2 py-5">
-  <div class="container">
-    coment: row
-    <div class="row justify-content-center">
-      coment: column
-      <div class="col-md-8 text-center">
-        <h3 class="my-3">Upcoming Events</h3>
-        <h6 class="subtitle font-weight-normal">You can relay on our amazing features list and also our customer services will be great experience for you without doubt</h6>
-      </div>
-      coment: column
-      coment: column
-    </div>
-    <div class="row mt-4">
-      coment: column
-      <div class="col-md-4 on-hover">
-        <div class="card border-0 mb-4">
-          <a href="#"><img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img3.jpg" alt="wrappixel kit"></a>
-          <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Oct<span class="d-block">23</span></div>
-          <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">You should have eagle’s eye on new trends and techonogies</a></h5>
-          <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
-          <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
-        </div>
-      </div>
-      coment: column
-      <div class="col-md-4 on-hover">
-        <div class="card border-0 mb-4">
-          <a href="#"><img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img2.jpg" alt="wrappixel kit"></a>
-          <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Oct<span class="d-block">23</span></div>
-          <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">New Seminar on Newest Food Recipe from World’s Best</a></h5>
-          <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
-          <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
-        </div>
-      </div>
-      coment: column
-      <div class="col-md-4 on-hover">
-        <div class="card border-0 mb-4">
-          <a href="#"><img class="card-img-top" src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/blog/blog-home/img1.jpg" alt="wrappixel kit"></a>
-          <div class="date-pos bg-info-gradiant p-2 d-inline-block text-center rounded text-white position-absolute">Oct<span class="d-block">23</span></div>
-          <h5 class="font-weight-medium mt-3"><a href="#" class="text-decoration-none link">Learn from small things to create something bigger.</a></h5>
-          <p class="mt-3">Business Park, Opp. Corns Sam Restaurant, New Yoark, US</p>
-          <a href="#" class="text-decoration-none linking text-themecolor mt-2">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
