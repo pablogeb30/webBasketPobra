@@ -1,0 +1,10 @@
+/* Estilo del div de la pagina */
+.construccion {
+  font-family: "pobraFont", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  font-size: 5em;
+  text-align: center;
+}

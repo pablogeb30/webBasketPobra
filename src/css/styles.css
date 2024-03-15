@@ -168,6 +168,10 @@ nav ul li a:hover {
   color: #ffd437;
 }
 
+nav ul li a.active {
+  color: #ffd437;
+}
+
 /* stroke */
 nav.stroke ul li a,
 nav.fill ul li a {
