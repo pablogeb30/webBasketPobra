@@ -7,6 +7,13 @@
   <!-- Enlace a la hoja de estilos general -->
   <link rel="stylesheet" type="text/css" href="/src/css/styles.css" />
 
+  <!-- Enlace a la hoja de estilos del calendario -->
+  <link rel="stylesheet" type="text/css" href="/src/css/multimedia.css" />
+
+  <!-- Enlace a splidejs -->
+  <script src="path-to-the-file/splide.min.js"></script>
+
+
   <!-- Metadatos de la pagina -->
   <meta charset="UTF-8" />
   <meta name="description" content="" />
@@ -51,20 +58,57 @@
       relacionados con Basket Pobra.
     </p>
     <h3>Basket Pobra - Fontiñas | 18/11/2023</h3>
-    <div>
-      <img src="/assets/images/matches/18-11-23/231118-01.jpg" alt="Imagen 1" width="25%" />
+    <div class="FAN">
+      <img class="ImagenA" src="/assets/images/matches/18-11-23/231118-01.jpg" alt="Imagen 1" width="25%" />
       <br /><br />
-      <img src="/assets/images/matches/18-11-23/231118-03.jpg" alt="Imagen 2" width="25%" />
+      <img class="ImagenB" src="/assets/images/matches/18-11-23/231118-03.jpg" alt="Imagen 2" width="25%" />
       <br /><br />
-      <img src="/assets/images/matches/18-11-23/231118-10.jpg" alt="Imagen 3" width="25%" />
+      <img class="ImagenC" src="/assets/images/matches/18-11-23/231118-10.jpg" alt="Imagen 3" width="25%" />
       <br /><br />
-      <img src="/assets/images/matches/18-11-23/231118-14.jpg" alt="Imagen 4" width="25%" />
+      <img class="ImagenD" src="/assets/images/matches/18-11-23/231118-14.jpg" alt="Imagen 4" width="25%" />
       <br /><br />
-      <img src="/assets/images/matches/18-11-23/231118-19.jpg" alt="Imagen 5" width="25%" />
+      <img class="ImagenE" src="/assets/images/matches/18-11-23/231118-19.jpg" alt="Imagen 5" width="25%" />
       <br /><br />
-      <img src="/assets/images/matches/18-11-23/231118-26.jpg" alt="Imagen 6" width="25%" />
+      <img class="ImagenF" src="/assets/images/matches/18-11-23/231118-26.jpg" alt="Imagen 6" width="25%" />
       <br />
-    </div>
+
+<div class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">Slide 01</li>
+      <img class="ImagenA" src="/assets/images/matches/18-11-23/231118-01.jpg" alt="Imagen 1" width="25%" />
+      <br /><br />
+      <img class="ImagenB" src="/assets/images/matches/18-11-23/231118-03.jpg" alt="Imagen 2" width="25%" />
+      <br /><br />
+      <img class="ImagenC" src="/assets/images/matches/18-11-23/231118-10.jpg" alt="Imagen 3" width="25%" />
+      <br /><br />
+      <img class="ImagenD" src="/assets/images/matches/18-11-23/231118-14.jpg" alt="Imagen 4" width="25%" />
+      <br /><br />
+      <img class="ImagenE" src="/assets/images/matches/18-11-23/231118-19.jpg" alt="Imagen 5" width="25%" />
+      <br /><br />
+      <img class="ImagenF" src="/assets/images/matches/18-11-23/231118-26.jpg" alt="Imagen 6" width="25%" />
+    </ul>
+  </div>
+  
+  <!-- Add the progress bar element -->
+  <div class="my-slider-progress">
+    <div class="my-slider-progress-bar"></div>
+  </div>
+</div>
+
+<script>
+  var splide = new Splide( '.splide' );
+  var bar    = splide.root.querySelector( '.my-carousel-progress-bar' );
+  
+  // Updates the bar width whenever the carousel moves:
+  splide.on( 'mounted move', function () {
+    var end  = splide.Components.Controller.getEnd() + 1;
+    var rate = Math.min( ( splide.index + 1 ) / end, 1 );
+    bar.style.width = String( 100 * rate ) + '%';
+  } );
+  
+  splide.mount();
+</script>
     <h3>Basket Pobra - PBB Porriño | 16/12/2023</h3>
     <div>
       <img src="/assets/images/matches/16-12-23/231216-20.jpg" alt="Imagen 1" width="25%" />
