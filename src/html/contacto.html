@@ -9,6 +9,9 @@
   <!-- Enlace a la hoja de estilos general -->
   <link rel="stylesheet" type="text/css" href="/src/css/styles.css" />
 
+  <!-- Enlace a la hoja de estilos de la pagina -->
+  <link rel="stylesheet" type="text/css" href="/src/css/contacto.css" />
+
   <!-- Metadatos de la pagina -->
   <meta charset="UTF-8" />
   <meta name="description" content="" />
@@ -25,7 +28,7 @@
 <body>
 
   <!-- Nombre del equipo y menu de navegacion en la cabecera -->
-  <header>
+  <header id="main-header">
     <!-- Titulo/logo -->
     <div class="titulo-container" id="logo">
       <a class="titulopeque" href="index.html">Basket</a>
@@ -46,25 +49,50 @@
     </section>
   </header>
 
+  <nav class="fill2">
+    <ul>
+      <li><a href="#" id="open-popup">Contáctanos</a></li>
+    </ul>
+  </nav>
+
   <!-- Seccion de contacto -->
-  <section>
-    <h2>Contáctanos</h2>
-    <p>
-      Por favor, completa el siguiente formulario de contacto y nos pondremos en
-      contacto contigo lo antes posible. También puedes encontrarnos en nuestras
-      redes sociales. ¡Estamos aquí para ayudarte en lo que necesites!
-    </p>
-    <h3>Nombre completo</h3>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" />
-    <label for="apellidos">Apellidos:</label>
-    <input type="text" id="apellidos" name="apellidos" />
-    <h3>Correo electrónico</h3>
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" />
-    <h3>Mensaje</h3>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
-  </section>
+  <div class="background" id="popup-container">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+          </div>
+          <div class="screen-header-right">
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTÁCTANOS</span>
+            </div>
+            <div class="app-contact">TELÉFONO: 681 314 928</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NOMBRE">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="CORREO">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="MENSAJE">
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">ENVIAR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Pie de pagina con informacion de contacto -->
   <footer class="footer">
@@ -102,70 +130,9 @@
   <!-- Script para hacer que se quede coloreada la pagina seleccionada -->
   <script src="/src/js/activepage.js"></script>
 
+  <!-- Script para abrir popup -->
+  <script src="/src/js/openpopup.js"></script>
+
 </body>
 
 </html>
-
-<!--
-<div class="background">
-  <div class="container">
-    <div class="screen">
-      <div class="screen-header">
-        <div class="screen-header-left">
-          <div class="screen-header-button close"></div>
-          <div class="screen-header-button maximize"></div>
-          <div class="screen-header-button minimize"></div>
-        </div>
-        <div class="screen-header-right">
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-          <div class="screen-header-ellipsis"></div>
-        </div>
-      </div>
-      <div class="screen-body">
-        <div class="screen-body-item left">
-          <div class="app-title">
-            <span>CONTACT</span>
-            <span>US</span>
-          </div>
-          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
-        </div>
-        <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="EMAIL">
-            </div>
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="CONTACT NO">
-            </div>
-            <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MESSAGE">
-            </div>
-            <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
-              <button class="app-form-button">SEND</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="credits">
-      inspired by
-      <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
-        <svg class="dribbble" viewBox="0 0 200 200">
-          <g stroke="#ffffff" fill="none">
-            <circle cx="100" cy="100" r="90" stroke-width="20"></circle>
-            <path d="M62.737004,13.7923523 C105.08055,51.0454853 135.018754,126.906957 141.768278,182.963345" stroke-width="20"></path>
-            <path d="M10.3787186,87.7261455 C41.7092324,90.9577894 125.850356,86.5317271 163.474536,38.7920951" stroke-width="20"></path>
-            <path d="M41.3611549,163.928627 C62.9207607,117.659048 137.020642,86.7137169 189.041451,107.858103" stroke-width="20"></path>
-          </g>
-        </svg>
-        Gururaj
-      </a>
-    </div>
-  </div>
-</div>
- -->

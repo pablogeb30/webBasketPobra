@@ -24,7 +24,10 @@ header {
 /* Estilo general del cuerpo */
 body {
   margin-top: 11em;
-  padding: 0 auto;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: justify;
+  padding: 2 auto;
   font-family: "appleFont", sans-serif;
   background-color: #ffd437;
   color: #24262b;
@@ -70,7 +73,12 @@ ul {
 .footer {
   background-color: #24262b;
   padding: 70px 0;
+  margin: 0; /* Elimina el margin */
+  width: 100%; /* Ajusta el ancho al 100% */
+  bottom: 0; /* Ajusta al fondo */
+  left: 0;
 }
+
 .footer-col {
   width: 25%;
   padding: 0 15px;
