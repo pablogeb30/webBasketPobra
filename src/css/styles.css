@@ -33,6 +33,12 @@ body {
   color: #24262b;
 }
 
+/* Estilo del titulo h3 */
+h3 {
+  text-align: center;
+  padding-top: 2em;
+}
+
 /* Estilo de las dos partes del titulo/logo */
 .titulo-container {
   text-align: center;
