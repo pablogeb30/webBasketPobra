@@ -1,0 +1,16 @@
+.FAN {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+  }
+  
+  .ImagenA{
+    grid-column: 1;
+    grid-row: 1 / 2;
+  }
+  .ImagenB{
+    grid-column: 2;
+    grid-row: 1 / 2;
+  } 

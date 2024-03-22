@@ -1,0 +1,59 @@
+div{
+    border: 2px solid black;
+
+}
+
+#Vino1{
+    margin: 3%;
+    text-align: center;
+}
+
+#Vino2{
+    margin: 2%;
+    text-align: center;
+}
+
+#Vino3{
+    margin: 2%;
+    text-align: center;
+}
+
+
+
+.contenedor1 {
+    /* Establece el número de columnas */
+    column-count: 2; 
+  
+    /* Establece el espacio entre las columnas */
+    column-gap: 15px; 
+  
+    /* Opcional: Añade un divisor entre columnas */
+    column-rule: 5px solid #ffffff; 
+    margin: 1%;
+  }
+
+  .contenedor2 {
+    /* Establece el número de columnas */
+    column-count: 2; 
+  
+    /* Establece el espacio entre las columnas */
+    column-gap: 10px; 
+  
+    /* Opcional: Añade un divisor entre columnas */
+    column-rule: 5px solid #ffffff; 
+    margin: 1%;
+  }
+
+  .contenedor3 {
+    /* Establece el número de columnas */
+    column-count: 2; 
+  
+    /* Establece el espacio entre las columnas */
+    column-gap: 10px; 
+  
+    /* Opcional: Añade un divisor entre columnas */
+    column-rule: 5px solid #ffffff; 
+    margin: 1%;
+  }
+
+  
