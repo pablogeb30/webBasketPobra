@@ -182,7 +182,6 @@
   }
 }
 
-/* Agrega estilos para el popup */
 #popup-container {
   display: none;
   position: fixed;
@@ -194,7 +193,6 @@
   z-index: 9999;
 }
 
-/* Agrega estilos para centrar el contenido del popup */
 #popup-container .container {
   display: flex;
   justify-content: center;
@@ -202,17 +200,17 @@
   height: 100%;
 }
 
-/* Resto de los estilos permanecen iguales */
-
-/* Estilo del div de la pagina */
 #open-popup {
   font-family: "pobraFont", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 46vh;
   font-size: 5em;
   text-align: center;
   text-decoration: none;
   color: inherit;
+}
+
+#open-popup:hover {
+  font-size: 5.5em;
 }

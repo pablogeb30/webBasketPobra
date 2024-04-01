@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 
 <html lang="es" data-bs-theme="auto">
+
 <!-- Cabecera de la pagina -->
 
 <head>
+
   <!-- Enlace a la hoja de estilos general -->
   <link rel="stylesheet" type="text/css" href="/src/css/styles.css" />
 
   <!-- Enlace a la hoja de estilos de noticias -->
   <link rel="stylesheet" type="text/css" href="/src/css/noticias.css" />
+
+  <!-- Enlace al codigo online js de jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Metadatos de la pagina -->
   <meta charset="UTF-8" />
@@ -25,9 +30,8 @@
 
 <body>
 
-  <!-- Nombre del equipo y menu de navegacion en la cabecera -->
+  <!-- Logo del equipo y menu de navegacion en la cabecera -->
   <header>
-    <!-- Titulo/logo -->
     <div class="titulo-container" id="logo">
       <a class="titulopeque" href="index.html">Basket</a>
       <br>
@@ -49,64 +53,91 @@
 
   <!-- Seccion de noticias -->
   <section>
+
+    <!-- Noticia 1 -->
     <article>
-      <h3 id="Titulo1">Victoria del basket POBRA en casa</h3>
-      <div class="contenedor-imagen">
-        <img src="/assets/images/matches/news1.jpg" alt="Foto de la noticia 1" />
-        <img src="/assets/images/matches/news1.jpg" alt="Foto de la noticia 1" />
-        <img src="/assets/images/matches/news1.jpg" alt="Foto de la noticia 1" />
+      <h3>Victoria del basket POBRA en casa</h3>
+      <div class="images">
+        <img src="/assets/images/matches/16-12-23/231216-6.jpg" alt="Foto 1 de la noticia 1" />
+        <img src="/assets/images/matches/16-12-23/231216-10.jpg" alt="Foto 2 de la noticia 1" />
+        <img src="/assets/images/matches/16-12-23/231216-53.jpg" alt="Foto 3 de la noticia 1" />
+      </div>
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image">
       </div>
       <div class="contenedor">
         <p>
-          Tras un duro partido contra Salesianos de Vigo, el equipo consiguió su
+          Tras un duro partido contra Porriño, el equipo consiguió su
           tercera victoria en temporada regular. En este partido vimos con toda la expresión
-          de la palabra lo que es capaz el equipo POBRA ya que vimos lo que son capaces de hacer con la
+          de la palabra lo que es capaz el equipo pobrense ya que vimos lo que son capaces de hacer con la
           pelota en la mano, semejantes jugadas de ayer. Tanto así que vimos a Mateo Montes hacer unas
           atajadas en el campo de juego impresionantes, por otro lado vimos a Manuel Sánchez tapar muchas
           jugadas que pudieron llegar a ser puntos.
         </p>
       </div>
     </article>
+
+    <!-- Noticia 2 -->
     <article>
-      <h3 id="TituloResto">Derrota contra CB Illa de Arousa</h3>
-      <div class="contenedor-imagen">
-        <img src="/assets/images/matches/news2.jpg" alt="Foto de la noticia 2" />
-        <img src="/assets/images/matches/news2.jpg" alt="Foto de la noticia 2" />
-        <img src="/assets/images/matches/news2.jpg" alt="Foto de la noticia 2" />
+      <h3>Derrota contra CB Illa de Arousa</h3>
+      <div class="images">
+        <img src="/assets/images/matches/01-13-24/240113-1.jpg" alt="Foto 1 de la noticia 2" />
+        <img src="/assets/images/matches/01-13-24/240113-4.jpg" alt="Foto 2 de la noticia 2" />
+        <img src="/assets/images/matches/01-13-24/240113-55.jpg" alt="Foto 3 de la noticia 2" />
+      </div>
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image">
       </div>
       <div class="contenedor">
         <p>
           Clara victoria del CB Illa de Arousa tras un arrasador segundo cuarto,
           que dejo a los nuestros sin opciones a remontar.
           En cuestion de estrategia no estuvimos nada mal, pero hubieron jugadas que se
-          pudieron haber hecho diferente y haber cambiado el rumbo del partido.
+          pudieron haber hecho diferente y haber cambiado el rumbo del partido. El resultado
+          deja al equipo tocado, que venía con buenas sensaciones en los últimos partidos. El entrenador
+          del equipo se plantea hacer rotaciones importantes en el quinteto titular para la próxima
+          jornada.
         </p>
       </div>
     </article>
+
+    <!-- Noticia 3 -->
     <article>
-      <h3 id="TituloResto">Victoria del Basket Pobra de infarto</h3>
-      <div class="contenedor-imagen">
-        <img src="/assets/images/matches/news3.jpg" alt="Foto de la noticia 3" />
-        <img src="/assets/images/matches/news3.jpg" alt="Foto de la noticia 3" />
-        <img src="/assets/images/matches/news3.jpg" alt="Foto de la noticia 3" />
+      <h3>Victoria del Basket Pobra de infarto</h3>
+      <div class="images">
+        <img src="/assets/images/matches/02-12-23/231202-1.jpg" alt="Foto 1 de la noticia 3" />
+        <img src="/assets/images/matches/02-12-23/231202-13.jpg" alt="Foto 2 de la noticia 3" />
+        <img src="/assets/images/matches/02-12-23/231202-132.jpg" alt="Foto 3 de la noticia 3" />
+      </div>
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image">
       </div>
       <div class="contenedor">
         <p>
-          Después de ir perdiendo todo el partido contra PBB Porriño, los
+          Después de ir perdiendo todo el partido contra Dorna, los
           pobrenses remontaron con un espléndido último cuarto.
           En este partido partido vimos impresionantes juagadas en el último cuarto
           donde hubo una remontada magistral para poder llegar a la gloria.
           Donde todas la jugadas fueron llevadas acabo por nuestros grandes jugadores lo cuales
-          les sacaron provecho y nos lograron llevar a victoria esta noche.
+          les sacaron provecho y nos lograron llevar a la victoria esta noche.
         </p>
       </div>
     </article>
+
+    <!-- Noticia 4 -->
     <article>
-      <h3 id="TituloResto">Derrota tras racha de victorias</h3>
-      <div class="contenedor-imagen">
-        <img src="/assets/images/matches/game1.jpg" alt="Foto de la noticia 4" />
-        <img src="/assets/images/matches/game1.jpg" alt="Foto de la noticia 4" />
-        <img src="/assets/images/matches/game1.jpg" alt="Foto de la noticia 4" />
+      <h3>Derrota tras racha de victorias</h3>
+      <div class="images">
+        <img src="/assets/images/matches/28-10-23/231028_3454.jpg" alt="Foto 1 de la noticia 4" />
+        <img src="/assets/images/matches/28-10-23/231028_3508.jpg" alt="Foto 2 de la noticia 4" />
+        <img src="/assets/images/matches/28-10-23/231028_3527.jpg" alt="Foto 3 de la noticia 4" />
+      </div>
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image">
       </div>
       <div class="contenedor">
         <p>
@@ -120,12 +151,18 @@
         </p>
       </div>
     </article>
+
+    <!-- Noticia 5 -->
     <article>
-      <h3 id="TituloResto">Derrota a domicilio del equipo pobrense</h3>
-      <div class="contenedor-imagen">
-        <img src="/assets/images/matches/game2.jpg" alt="Foto de la noticia 5" />
-        <img src="/assets/images/matches/game2.jpg" alt="Foto de la noticia 5" />
-        <img src="/assets/images/matches/game2.jpg" alt="Foto de la noticia 5" />
+      <h3>Derrota a domicilio del equipo pobrense</h3>
+      <div class="images">
+        <img src="/assets/images/matches/18-11-23/231118-01.jpg" alt="Foto 1 de la noticia 5" />
+        <img src="/assets/images/matches/18-11-23/231118-03.jpg"" alt=" Foto 2 de la noticia 5" />
+        <img src="/assets/images/matches/18-11-23/231118-10.jpg"" alt=" Foto 3 de la noticia 5" />
+      </div>
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image">
       </div>
       <div class="contenedor">
         <p>
@@ -137,6 +174,31 @@
         </p>
       </div>
     </article>
+
+    <!-- Noticia 6 -->
+    <article>
+      <h3>Victoria cómoda en casa</h3>
+      <div class="images">
+        <img src="/assets/images/matches/12-11-23/231112_3790.jpg" alt="Foto 1 de la noticia 6" />
+        <img src="/assets/images/matches/12-11-23/231112_3811.jpg" alt=" Foto 2 de la noticia 6" />
+        <img src="/assets/images/matches/12-11-23/231112_3834.jpg" alt=" Foto 3 de la noticia 6" />
+      </div>
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image">
+      </div>
+      <div class="contenedor">
+        <p>
+          En un partido en casa, el equipo de baloncesto Basket Pobra logró una victoria cómoda contra su oponente,
+          demostrando una vez más su habilidad y destreza en la cancha. Desde el inicio del partido, el equipo
+          pobrense mostró una determinación feroz y una estrategia impecable que les permitió tomar la delantera y
+          mantenerla a lo largo del juego.
+          Con el apoyo de sus seguidores y el entusiasmo de la multitud, el equipo de Basket Pobra logró una victoria
+          impresionante que dejó a los aficionados emocionados y orgullosos de su equipo.
+        </p>
+      </div>
+    </article>
+
   </section>
 
   <!-- Pie de pagina con informacion de contacto -->
@@ -168,6 +230,9 @@
 
   <!-- Script para hacer que se quede coloreada la pagina seleccionada -->
   <script src="/src/js/activepage.js"></script>
+
+  <!-- Script para ampliar una imagen seleccionada -->
+  <script src="/src/js/imageviewer.js"></script>
 
 </body>
 
