@@ -246,3 +246,16 @@ nav.fill ul li a:hover:after {
     background: #3a3a3a;
   }
 }
+
+.patrocinadores {
+  display: grid; /* Uso de CSS Grid */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  align-items: center;
+}
+
+.patrocinadores img {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}

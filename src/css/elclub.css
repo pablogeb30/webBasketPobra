@@ -1,0 +1,26 @@
+@media screen and (min-width: 600px) {
+  .col1 {
+    width: 30%;
+    float: left;
+  }
+
+  .col2 {
+    width: 30%;
+    float: center;
+  }
+
+  .col3 {
+    width: 30%;
+    float: right;
+  }
+}
+
+img {
+  width: 107.7%;
+  margin-bottom: -50px;
+  margin-left: -3em;
+}
+
+.medio {
+  margin-top: 50px;
+}
