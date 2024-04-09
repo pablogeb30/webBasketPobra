@@ -4,7 +4,7 @@ window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   if (window.scrollY > 200 && !isHeaderReduced) {
     logo.style.fontSize = "0.4em"; // Cambia el tamaño del logo cuando haces scroll hacia abajo
-    header.style.height = "6.2em";
+    header.style.height = "5.8em";
     isHeaderReduced = true;
   } else if (window.scrollY <= 200 && isHeaderReduced) {
     logo.style.fontSize = "1em"; // Tamaño original del logo cuando vuelves arriba

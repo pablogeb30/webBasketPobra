@@ -1,12 +1,12 @@
 .contenedor {
-  column-count: 3;
+  column-count: 3; /* Uso de CSS Multicol */
   column-gap: 30px;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 
 .images {
-  display: grid;
+  display: grid; /* Uso de CSS Grid */
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }

@@ -13,10 +13,10 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   background-color: #24262b;
   color: #ffd437;
   /* Ajusta la altura de tu header según sea necesario */
+  width: 100%;
   height: 11em;
   transition: height 0.5s ease;
   z-index: 1000;
@@ -74,28 +74,20 @@ img {
 /* Estilo del footer */
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-}
-.container {
-  max-width: 1170px;
-  margin: auto;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
 }
-ul {
-  list-style: none;
-}
 .footer {
   background-color: #24262b;
-  padding: 70px 0;
-  margin: 0; /* Elimina el margin */
-  width: 100%; /* Ajusta el ancho al 100% */
-  bottom: 0; /* Ajusta al fondo */
-  left: 0;
+  padding: 30px;
+  margin-left: -3em;
+  margin-right: -3em;
+  margin-top: 3em;
 }
 
 .footer-col {
@@ -118,7 +110,7 @@ ul {
   background-color: #ffd437;
   height: 2px;
   box-sizing: border-box;
-  width: 100px;
+  width: 180px;
 }
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
@@ -183,7 +175,7 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  padding: 0.5em;
+  padding: 0.3em;
   text-decoration: none;
   color: #fff;
   font-weight: 800;

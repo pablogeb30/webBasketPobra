@@ -10,9 +10,8 @@
   <!-- Enlace a la hoja de estilos del calendario -->
   <link rel="stylesheet" type="text/css" href="/src/css/multimedia.css" />
 
-  <!-- Enlace a splidejs -->
-  <script src="path-to-the-file/splide.min.js"></script>
-
+  <!-- Enlace al codigo online js de jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- Metadatos de la pagina -->
   <meta charset="UTF-8" />
@@ -53,14 +52,39 @@
 
   <!-- Seccion de multimedia -->
   <section>
-    <h3>Basket Pobra vs Fontiñas - 18/11/2023</h3>
-    <div class="grupo-imagenes">
+    <!-- Primer partido -->
+    <h3>Fontiñas vs Basket Pobra - 18/11/2023</h3>
+    <div class="images">
       <div class="item1"><img src="/assets/images/matches/18-11-23/231118-01.jpg" alt="Imagen 1"></div>
       <div class="item2"><img src="/assets/images/matches/18-11-23/231118-03.jpg" alt="Imagen 2"></div>
       <div class="item3"><img src="/assets/images/matches/18-11-23/231118-10.jpg" alt="Imagen 3"></div>
-      <div class="item4"><img src="/assets/images/matches/18-11-23/231118-14.jpg" alt="Imagen 4"></div>
-      <div class="item5"><img src="/assets/images/matches/18-11-23/231118-19.jpg" alt="Imagen 5"></div>
-      <div class="item6"><img src="/assets/images/matches/18-11-23/231118-26.jpg" alt="Imagen 6"></div>
+      <div class="item4"><img src="/assets/images/matches/18-11-23/231118-15.jpg" alt="Imagen 4"></div>
+      <div class="item5"><img src="/assets/images/matches/18-11-23/231118-24.jpg" alt="Imagen 5"></div>
+      <div class="item6"><img src="/assets/images/matches/18-11-23/231118-27.jpg" alt="Imagen 6"></div>
+    </div>
+    <div id="image-viewer">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="full-image">
+    </div>
+    <!-- Segundo partido -->
+    <h3>Salesianos Vigo vs Basket Pobra - 25/11/2023</h3>
+    <div class="images">
+      <div class="item1"><img src="/assets/images/matches/25-11-23/231125-48.jpg" alt="Imagen 1"></div>
+      <div class="item2"><img src="/assets/images/matches/25-11-23/231125-52.jpg" alt="Imagen 2"></div>
+      <div class="item3"><img src="/assets/images/matches/25-11-23/231125-53.jpg" alt="Imagen 3"></div>
+      <div class="item4"><img src="/assets/images/matches/25-11-23/231125-67.jpg" alt="Imagen 4"></div>
+      <div class="item5"><img src="/assets/images/matches/25-11-23/231125-75.jpg" alt="Imagen 5"></div>
+      <div class="item6"><img src="/assets/images/matches/25-11-23/231125-85.jpg" alt="Imagen 6"></div>
+    </div>
+    <!-- Tercer partido -->
+    <h3>Basket Pobra vs Dorna - 02/12/2023</h3>
+    <div class="images">
+      <div class="item1"><img src="/assets/images/matches/02-12-23/231202-1.jpg" alt="Imagen 1"></div>
+      <div class="item2"><img src="/assets/images/matches/02-12-23/231202-9.jpg" alt="Imagen 2"></div>
+      <div class="item3"><img src="/assets/images/matches/02-12-23/231202-13.jpg" alt="Imagen 3"></div>
+      <div class="item4"><img src="/assets/images/matches/02-12-23/231202-24.jpg" alt="Imagen 4"></div>
+      <div class="item5"><img src="/assets/images/matches/02-12-23/231202-127.jpg" alt="Imagen 5"></div>
+      <div class="item6"><img src="/assets/images/matches/02-12-23/231202-132.jpg" alt="Imagen 6"></div>
     </div>
   </section>
 
@@ -93,6 +117,9 @@
 
   <!-- Script para hacer que se quede coloreada la pagina seleccionada -->
   <script src="/src/js/activepage.js"></script>
+
+  <!-- Script para ampliar una imagen seleccionada -->
+  <script src="/src/js/imageviewer.js"></script>
 
 </body>
 
