@@ -1,0 +1,83 @@
+{
+  "equipo": "Sénior Femenino",
+  "jugadores": [
+    {
+      "nombre": "Ana Gómez",
+      "edad": 25,
+      "altura": 170,
+      "posicion": "Base"
+    },
+    {
+      "nombre": "Laura Martínez",
+      "edad": 20,
+      "altura": 175,
+      "posicion": "Escolta"
+    },
+    {
+      "nombre": "Sofía Fernández",
+      "edad": 22,
+      "altura": 180,
+      "posicion": "Alero"
+    },
+    {
+      "nombre": "Elena Sánchez",
+      "edad": 28,
+      "altura": 185,
+      "posicion": "Ala-Pívot"
+    },
+    {
+      "nombre": "María Pérez",
+      "edad": 30,
+      "altura": 190,
+      "posicion": "Pívot"
+    },
+    {
+      "nombre": "Carla González",
+      "edad": 23,
+      "altura": 178,
+      "posicion": "Base"
+    },
+    {
+      "nombre": "Lucía Díaz",
+      "edad": 21,
+      "altura": 182,
+      "posicion": "Escolta"
+    },
+    {
+      "nombre": "Paula Ruiz",
+      "edad": 24,
+      "altura": 183,
+      "posicion": "Alero"
+    },
+    {
+      "nombre": "Marina López",
+      "edad": 27,
+      "altura": 188,
+      "posicion": "Ala-Pívot"
+    },
+    {
+      "nombre": "Clara García",
+      "edad": 26,
+      "altura": 192,
+      "posicion": "Pívot"
+    },
+    {
+      "nombre": "Isabel Martín",
+      "edad": 29,
+      "altura": 175,
+      "posicion": "Base"
+    },
+    {
+      "nombre": "Raquel Serrano",
+      "edad": 31,
+      "altura": 177,
+      "posicion": "Escolta"
+    },
+    {
+      "nombre": "Carmen Jiménez",
+      "edad": 28,
+      "altura": 180,
+      "posicion": "Alero"
+    }
+  ]
+}

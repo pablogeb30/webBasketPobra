@@ -1,0 +1,55 @@
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.imagen {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contenedor2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10px;
+  margin-bottom: -40px;
+}
+
+.button_slide {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "pobraFont";
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #ff9100;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  margin: 0 auto;
+  text-decoration: none;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #ff9100;
+}
+
+.button_slide a {
+  display: block; /* Hace que el enlace ocupe todo el espacio del div */
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,5 +1,5 @@
 {
-  "equipo": "Equipo Sénior",
+  "equipo": "Sénior Masculino",
   "jugadores": [
     {
       "nombre": "Mateo Montes",
@@ -71,6 +71,12 @@
       "nombre": "Mateo Aguiño",
       "edad": 27,
       "altura": 193,
+      "posicion": "Pívot"
+    },
+    {
+      "nombre": "Jose Luis",
+      "edad": 24,
+      "altura": 178,
       "posicion": "Pívot"
     }
   ]

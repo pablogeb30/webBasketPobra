@@ -13,14 +13,17 @@
     width: 30%;
     float: right;
   }
+
+  .col2:last-child {
+    margin-bottom: -40px;
+  }
 }
 
 img {
-  width: 107.7%;
+  width: 100%;
   margin-bottom: -50px;
-  margin-left: -3em;
 }
 
 .medio {
-  margin-top: 50px;
+  margin-top: 80px;
 }
