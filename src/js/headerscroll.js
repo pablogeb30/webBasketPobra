@@ -8,7 +8,7 @@ window.addEventListener("scroll", function () {
     isHeaderReduced = true;
   } else if (window.scrollY <= 200 && isHeaderReduced) {
     logo.style.fontSize = "1em"; // Tamaño original del logo cuando vuelves arriba
-    header.style.height = "11em";
+    header.style.height = "11.4em";
     isHeaderReduced = false;
   }
 });
